@@ -64,3 +64,14 @@ hashmap.c:56:3: error: conversion to non-scalar type requested
       |   ^~~~
 Compilation failed
 1469d91
+Wed 10 May 2023 06:25:18 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:56:17: error: assignment to ‘Pair **’ from incompatible pointer type ‘Pair *’ [-Werror=incompatible-pointer-types]
+   56 |   mapa->buckets = (Pair *)malloc(sizeof(Pair));
+      |                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+969bfd4
